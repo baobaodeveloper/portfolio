@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+  --font-base: 'DM Sans', sans-serif;
+  --front-logo: 'Pacifico', cursive;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-base);
+  color: var(--gray-color);
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}

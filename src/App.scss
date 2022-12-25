@@ -1,0 +1,62 @@
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap_container {
+  display: flex;
+  width: 100vw;
+  padding: 10px 32px;
+}
+
+.app_social {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: transparent;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    border: 1px solid var(--lightGray-color);
+    cursor: pointer;
+    font-size: 20px;
+
+    &:hover {
+      background-color: var(--secondary-color);
+      transition: all 0.4s;
+      svg {
+        fill: var(--white-color);
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+.app_dots {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: transparent;
+  li a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}

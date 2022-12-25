@@ -1,0 +1,114 @@
+.app_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    li a {
+      cursor: pointer;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+
+.app__logo {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--front-logo);
+}
+
+.navbar_icon {
+  display: none;
+  @media screen and (max-width: 900px) {
+    cursor: pointer;
+    display: block;
+    background-color: var(--secondary-color);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+
+    svg {
+      fill: var(--white-color);
+    }
+  }
+}
+
+.navbar_modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  padding: 20px;
+
+  width: 70%;
+  height: 100%;
+
+  background: url(../../assets/bgWhite.png);
+  background-color: var(--white-color);
+  background-size: cover;
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    svg {
+      font-size: 26px;
+      cursor: pointer;
+    }
+  }
+
+  .navbar_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    li a {
+      cursor: pointer;
+      display: block;
+      padding: 10px 20px;
+
+      font-size: 20px;
+
+      &:hover {
+        color: var(--white-color);
+        background-color: var(--brown-color);
+      }
+    }
+  }
+}
